@@ -1,0 +1,13 @@
+network:
+  version: 2
+  ethernets:
+    enp6s18:
+      dhcp4: false
+      addresses:
+          - {{ vm102_mysql_cidr }}
+      routes:
+          - to: default
+            via: {{ vms_gateway }}
+      nameservers:
+          addresses:
+              - {{ vms_dns_server }}
