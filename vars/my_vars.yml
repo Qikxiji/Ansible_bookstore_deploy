@@ -4,8 +4,8 @@ vms_dns_server: 192.168.0.1
 
 
 #vm102-nginx-php-pfm
-vm102_mysql_ip: 10.10.10.102
-vm102_mysql_cidr: 10.10.10.102/24
+vm102_nginx_ip: 10.10.10.102
+vm102_nginx_cidr: 10.10.10.102/24
 website_dir: /usr/share/nginx/html/
 php_fpm_version: 8.3
 php_fpm_socket: /run/php/php{{ php_fpm_version }}-fpm.sock

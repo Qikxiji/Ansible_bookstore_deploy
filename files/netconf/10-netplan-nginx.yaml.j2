@@ -4,7 +4,7 @@ network:
     enp6s18:
       dhcp4: false
       addresses:
-          - {{ vm102_mysql_cidr }}
+          - {{ vm102_nginx_cidr }}
       routes:
           - to: default
             via: {{ vms_gateway }}
